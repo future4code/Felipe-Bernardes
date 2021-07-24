@@ -62,10 +62,15 @@ function imprimeInformacoesUsuario() {
 // Exercício 5
 function imprimeTresCoresFavoritas() {
   // escreva seu código aqui
-  const cores = prompt['car1', 'cor2', 'cor3']
+const cor1 = prompt('Digite uma cor: ')
+const cor2 = prompt('Digite uma segunda cor: ')
+const cor3 = prompt('Digite uma terceira cor: ')
 
-  console.log(cores)
+const arraycores = [] 
 
+arraycores.push (cor1, cor2, cor3)
+
+console.log(arraycores)
 }
 
 // Exercício 6
@@ -117,38 +122,44 @@ function checaIgualdadeDesconsiderandoCase() {
 // Exercício 10
 function checaRenovacaoRG() {
   // escreva seu código aqui
-  const anoAtual = Number(prompt('Em que ano estamos? '))
-  const anoNascimento = Number(prompt('Em que ano nasceu? '))
-  const anoRgEmitido = Number(prompt('Em que ano seu RG foi emitido? '))
+  let anoAtual = Number(prompt("Digite o ano que você nasceu."))
+  let anoNascimento = Number(prompt("Digite o ano atual"))
+  let anoIdentidade = Number(prompt("Digite o ano de emissão da sua carteira de identidade."))
+  
+  let idade = (anoAtual - anoNascimento)
+  let tempoEmissao = (anoAtual - anoIdentidade)
+  
+  let renovacao20 = idade <= 20 && tempoEmissao >= 5
+  let renovacao20A50 = (idade > 20) && (idade <= 50) && tempoEmissao >= 10
+  let renovacao50 = idade > 50 && tempoEmissao >= 15
+ 
+  let renovacao = renovacao20 || renovacao20A50 || renovacao50
 
-  let ano20 = anoAtual - anoNascimento <= 20 && anoAtual - anoRgEmitido >= 5
-  let ano50 = anoAtual - anoNascimento > 20  < 50 && anoAtual - anoRgEmitido >= 10
-  let ano50Mais = anoAtual - anoNascimento > 50 && anoAtual - anoRgEmitido >= 15
-
-  const renovacaoRG = ano20 || ano50 || ano50Mais
-
-  console.log(renovacaoRG)
-
-
+  console.log(renovacao)
 }
+
 
 // Exercício 11
 function checaAnoBissexto() {
   // escreva seu código aqui
-  const ano = prompt('Digite um ano para saber se ele é Bissexto: ')
+  const ano = Number(prompt('Digite um ano para saber se ele é Bissexto: '))
 
-  const anoBissexto = ano >= (ano % 4 == 0 && ano % 100 != 0 && ano % 400 == 0)
-  console.log(anoBissexto)
+  const divide4100 = ano % 4 === 0 && ano % 100 !== 0
+  const divide400 = ano % 400 === 0
+
+  console.log(divide4100 || divide400)
 }
+
+
 
 // Exercício 12
 function checaValidadeInscricaoLabenu() {
   // escreva seu código aqui
-  const idade = Number(prompt('qual sua idade? '))
-  const ensinoMedio = Number(prompt('tem ensino médio completo? '))
-  const disponibilidade = Number(prompt('tem disponibilidade de horario? '))
+  const idade = prompt('qual sua idade? ')
+  const ensinoMedio = prompt('tem ensino médio completo? ')
+  const disponibilidade = prompt('tem disponibilidade de horario? ')
 
-  const inscricao = idade == sim && ensinoMedio == sim && disponibilidade == sim
+  const inscricao = idade === 'sim' && ensinoMedio === 'sim' && disponibilidade === 'sim'
 
   console.log(inscricao)
 }
