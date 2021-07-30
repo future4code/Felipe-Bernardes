@@ -57,29 +57,45 @@ console.log(minhaFuncao(pessoa, "altura"))
 
 // EX 1
 
+function euMesmo() {
 const pessoa1 ={
     nome: "Felipe",
     apelidos: ["Feh", " Feliperaz ", " O Brabo"],
 }
 const novoApelido = {...pessoa1, apelidos: ["Feliperaz", " O Brabo", " Feh"],
+
 }
 console.log(`Eu sou ${novoApelido.nome}, mas pode me chamar de ${novoApelido.apelidos}`)
+}
+euMesmo()
+
+
 
 // EX 2
 
+function pessoasAeB() {
 
 const pessoaA = {
     nome: "Alessandra", 
     idade: 33,
     profissao: "Fisica Nuclear", 
 }
+const pessoaB = {
+    nome: "Giseli", 
+    idade: 38,
+    profissao: "Professora", 
+}
 
 console.log([pessoaA.nome, pessoaA.nome.length, pessoaA.idade, pessoaA.profissao, pessoaA.profissao.length])
+console.log([pessoaB.nome, pessoaB.nome.length, pessoaB.idade, pessoaB.profissao, pessoaB.profissao.length])
+}
+pessoasAeB()
 
 // EX 3
 
 const carrinho = []
 
+function frutas() {
 const fruta1 = {
     nome: "Laranja", 
     disponivel: true ,
@@ -97,6 +113,8 @@ carrinho.push(fruta2)
 carrinho.push(fruta3)
 
 console.log(carrinho)
+}
+frutas()
 
 
 // ******DESAFIO******
