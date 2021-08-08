@@ -41,10 +41,17 @@ const animais = Number(prompt('Quantos animais de estimação você tem? '))
 
 if (animais <= 0) {
     console.log('Que pena! você nao tem animais de estimação mas se uqiser pode adotar')
-}else {
+}else { let i = 0
+   while(i !== animais){
 const nomeAnimais = prompt(['Digite o nome dos animais: '])
-const nomeAnimais = 
+i++
+console.log(nomeAnimais)
+   }
+   
 }
+
+
+
 
 
 
