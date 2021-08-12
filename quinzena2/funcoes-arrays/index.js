@@ -56,12 +56,22 @@
     const arrayPets2 = pets.filter((item) => {
         return item.raca === "Salsicha"
     })
-    
+    const arrayPetsPoodle = pets.filter((item) => {
+        return item.raca === "Poodle"
+    })
+    const novoArrayPetsPoodle = arrayPetsPoodle.map((item) =>{
+        return item.nome
+
+    })
+    function mensagemDesconto(valor, novoArrayPetsPoodle){
+        return `Você ganhou um cupom de desconto de 10% para tosar o/a ${novoArrayPetsPoodle}`
+    }   
    
-   
+
+
     console.log(arrayPets)
     console.log(arrayPets2)
-    // console.log(`Você ganhou um cupom de desconto de 10% para tosar o/a ${arrayPets3}`)
+    console.log(`Você ganhou um cupom de desconto de 10% para tosar o/a ${novoArrayPetsPoodle}`)
 
 const produtos = [
     { nome: "Alface Lavada", categoria: "Hortifruti", preco: 2.5 },
@@ -81,3 +91,17 @@ const produtos = [
  const arrayProdutos = produtos.map((nomeProdutos))
 
  console.log(arrayProdutos)
+
+ function produtoPreco(item, index, array) {
+    return item.nome
+    
+ }
+ function precoProdutos(item, index, array){
+     return item.preco
+ }
+ const produtoEPreco = produtos.map(produtoPreco)
+ const precoEProduto = produtos.map(precoProdutos)
+ 
+ const arrayPrecoProduto = [produtoEPreco + precoEProduto]
+
+ console.log(arrayPrecoProduto)
