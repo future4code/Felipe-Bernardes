@@ -70,9 +70,13 @@ return numNPar
 
 // EXERCÍCIO 08
 function checaTriangulo(a, b, c) {
-  // return 'Escaleno'
-  // return 'Equilátero'
-  // return 'Isósceles'
+  if(a !== b && b !== c){
+    return 'escaleno'
+  }else if(a === b && b === c){
+    return 'equilatero'
+  }else{
+    return 'isoceles'
+  }
 }
 
 // EXERCÍCIO 09
