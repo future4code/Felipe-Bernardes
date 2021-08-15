@@ -48,12 +48,13 @@ return maior
 
 // EXERCÍCIO 05
 function retornaQuantidadeElementos(array) {
-  return array.length
+  let tamanhoArray = array.length
+  return tamanhoArray
 }
 
 // EXERCÍCIO 06
 function retornaExpressoesBooleanas() {
-
+return [false, false, true, true, true]
 }
 
 // EXERCÍCIO 07
