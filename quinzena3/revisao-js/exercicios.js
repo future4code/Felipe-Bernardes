@@ -36,9 +36,9 @@ function retornaNumerosPares(array) {
 
 // EXERCÍCIO 04
 function retornaMaiorNumero(array) {
-let maior = -Infinity
-for(let i = 0; i === array.length; i++){
-  if(array[i] > maior){
+let maior = array[0]
+for(let i = 0; i< array.length; i++){
+  if(maior < array[i]){
     maior = array[i]
   }
 }
