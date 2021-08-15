@@ -10,15 +10,26 @@ return inverter
 
 // EXERCÍCIO 02
 function retornaNumerosParesElevadosADois(array) {
-
+let segundoArray = []
+for(let i = 0; i< array.length; i++){
+  if (array[i] % 2 === 0){
+    segundoArray.push(array[i] * array[i])
+  }
+}
+return segundoArray
 } 
 
 
 
 // EXERCÍCIO 03
 function retornaNumerosPares(array) {
- 
-
+ let segundoArray = []
+ for(let i = 0; i < array.length; i++){
+   if(array[i] % 2 === 0){
+     segundoArray.push(array[i])
+   }
+ }
+ return segundoArray
 }
 
 
