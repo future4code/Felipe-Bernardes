@@ -84,6 +84,7 @@ function comparaDoisNumeros(num1, num2) {
 let numMaior
 let numMenor
 let maiorDivideMenor
+
 if(num1>num2){
   numMaior = num1
   numMenor = num2
@@ -102,9 +103,34 @@ return{
 }
 
 // EXERCÍCIO 10
-function segundoMaiorEMenor(array) {
+// function segundoMaiorEMenor(array) {
+// let menor = Infinity
+// let maior = -Infinity
+// let segundoMenor = Infinity
+// let segundoMaior = -Infinity
+// segundoArray = []
 
-}
+// for(let i of array){
+//   if(i < menor){
+//     menor = i
+//   }
+//   if(i > maior){
+//     meior = i
+//   }
+// }
+// for(let i of array){
+//   if(i < segundoMenor && i !== menor){
+//     segundoMenor = i
+//   }
+//   if(i > segundoMaior && i !== maior){
+//     segundoMaior = i
+//   }
+// }
+// segundoArray.push(segundoMaior)
+// segundoArray.push(segundoMenor)
+
+// return segundoArray
+// }
 
 // EXERCÍCIO 11
 function ordenaArray(array) {
