@@ -132,65 +132,75 @@ return{
 // return segundoArray
 // }
 
-// EXERCÍCIO 11
-function ordenaArray(array) {
-  const len = array.length
-  for (let i = 0;i < len;i++) {
-    for (let j = 0;j < len;j++) {
-      if (array[j] > array[j + 1]) {
-        let tmp = array[j]
-        array[j] = array[j + 1]
-        array[j + 1] = tmp
-      }
-    }
-  }
-  return array
-}
+// // EXERCÍCIO 11
+// function ordenaArray(array) {
+//   const len = array.length
+//   for (let i = 0;i < len;i++) {
+//     for (let j = 0;j < len;j++) {
+//       if (array[j] > array[j + 1]) {
+//         let tmp = array[j]
+//         array[j] = array[j + 1]
+//         array[j + 1] = tmp
+//       }
+//     }
+//   }
+//   return array
+// }
 
-// EXERCÍCIO 12
-function filmeFavorito() {
-  const filme = {
-    nome: 'O Diabo Veste Prada',
-    ano: 2006,
-    diretor: 'David Frankel',
-    atores: ['Meryl Streep', 'Anne Hathaway', 'Emily Blunt', 'Stanley Tucci']
-  }
+// // EXERCÍCIO 12
+// function filmeFavorito() {
+//   const filme = {
+//     nome: 'O Diabo Veste Prada',
+//     ano: 2006,
+//     diretor: 'David Frankel',
+//     atores: ['Meryl Streep', 'Anne Hathaway', 'Emily Blunt', 'Stanley Tucci']
+//   }
 
- return filme
-}
+//  return filme
+// }
 
 
 
-// EXERCÍCIO 13
-function imprimeChamada() {
-  const filme = {
-    nome: 'O Diabo Veste Prada',
-    ano: 2006,
-    diretor: 'David Frankel',
-    atores: ['Meryl Streep', 'Anne Hathaway', 'Emily Blunt', 'Stanley Tucci']
-  }
+// // EXERCÍCIO 13
+// function imprimeChamada() {
+//   const filme = {
+//     nome: 'O Diabo Veste Prada',
+//     ano: 2006,
+//     diretor: 'David Frankel',
+//     atores: ['Meryl Streep', 'Anne Hathaway', 'Emily Blunt', 'Stanley Tucci']
+//   }
   
-  let atoresConcat = ""
-  for (let i = 0;i < filme.atores.length;i++) {
-    if (i === filme.atores.length - 1) {
-      atoresConcat += filme.atores[i]
-    } else {
-      atoresConcat += filme.atores[i] + ", "
-    }
-  }
+//   let atoresConcat = ""
+//   for (let i = 0;i < filme.atores.length;i++) {
+//     if (i === filme.atores.length - 1) {
+//       atoresConcat += filme.atores[i]
+//     } else {
+//       atoresConcat += filme.atores[i] + ", "
+//     }
+//   }
 
-  return `Venha assistir ao filme ${filme.nome}, de ${filme.ano}, dirigido por ${filme.diretor} e estrelado por ${atoresConcat}.`
-}
+//   return `Venha assistir ao filme ${filme.nome}, de ${filme.ano}, dirigido por ${filme.diretor} e estrelado por ${atoresConcat}.`
+// }
 
-// EXERCÍCIO 14
-function criaRetangulo(lado1, lado2) {
+// // EXERCÍCIO 14
+// function criaRetangulo(lado1, lado2) {
+//   const retangulo = {
+//     largura: lado1,
+//     altura: lado2,
+//     perimetro: 2 * (lado1 + lado2),
+//     area: lado1 * lado2
+//   }
 
-}
+//   return retangulo
+// }
 
-// EXERCÍCIO 15
-function anonimizaPessoa(pessoa) {
-
-}
+// // EXERCÍCIO 15
+// function anonimizaPessoa(pessoa) {
+//   return {
+//     ...pessoa,
+//     nome: 'ANÔNIMO'
+//   }
+// }
 
 // EXERCÍCIO 16A
 function maioresDe18(arrayDePessoas) {
