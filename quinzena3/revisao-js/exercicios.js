@@ -71,11 +71,11 @@ return numNPar
 // EXERCÍCIO 08
 function checaTriangulo(a, b, c) {
   if(a !== b && b !== c){
-    return 'escaleno'
+    return 'Escaleno'
   }else if(a === b && b === c){
-    return 'equilatero'
+    return 'Equilatero'
   }else{
-    return 'isoceles'
+    return 'Isóceles'
   }
 }
 
@@ -156,7 +156,7 @@ function filmeFavorito() {
     atores: ['Meryl Streep', 'Anne Hathaway', 'Emily Blunt', 'Stanley Tucci']
   }
 
-  return filme
+ return filme
 }
 
 
