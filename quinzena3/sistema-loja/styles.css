@@ -1,10 +1,48 @@
 body {
-    background-color: rgba(118, 248, 100, 0.897);
+    background-color:rgb(226, 95, 226);
+}
+.logo{
+    text-align: center;
+    background-color: lightblue;
+}
+.botaonav{
+    text-align: center;
 }
 #botao{
     background-color: blueviolet;
 }
 
-#redes{
+.redes{
     width:10px;height:10%;
+    text-align: center;
+    display:inline;
+}
+.img1 {
+    background-color: blue;
+    width: 10%;
+    padding: 25px;
+    margin: 20px;
+   }
+  
+   .img2 {
+    background-color: orange;
+    width: 10%;
+    padding: 25px;
+    margin: 20px;
+  }
+  
+    .img3 {
+    background-color: Dodgerblue;
+    width: 10%;
+    padding: 25px;
+    margin: 20px;
+    font-size: 90%;
+   }
+   footer{
+       display:flex;
+       background-color: grey;
+   }
+  
+table{
+    text-align: center;
 }

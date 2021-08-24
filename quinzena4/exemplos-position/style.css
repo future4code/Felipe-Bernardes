@@ -1,0 +1,41 @@
+  
+/* Configuração padrão */
+
+html {
+  box-sizing: border-box;
+}
+
+
+body {
+  background: #333;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  padding: 20px;
+  max-width: 700px;
+}
+
+div {
+  padding: 20px; 
+  border-radius: 10px;  
+  margin: 0;
+  min-height: 150px;  
+  overflow: hidden;
+}
+
+.purple {
+  background-color: purple;
+  height: 100vh;
+}
+
+.green {
+  background-color: green;
+}
+
+.magenta {
+  background-color: magenta;
+}
+
+
+/* exemplos aqui */
+
+
