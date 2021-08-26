@@ -97,8 +97,9 @@ div:last-child {
 }
 
 table {
-    
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 table>td{
     text-align: center;
@@ -123,7 +124,7 @@ td button:active{
 .container-do-search {
     margin-top: 20px;
     height: 100px;
-}
+    }
 
 
 #back-button {
@@ -134,8 +135,14 @@ td button:active{
     border-radius: 5px;
     font-size: 10px;
     color: black;
+    display: flex;
+    justify-content: center;
 }
 
 #back-button:hover {
     background-color: #635a3d
+}
+
+.fonterob{
+    font-family: 'robot';
 }
