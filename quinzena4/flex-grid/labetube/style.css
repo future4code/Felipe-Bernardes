@@ -36,10 +36,13 @@ footer{
 }
 
 main{
+
+    justify-content: space-around;
     gap: 16px;
     display:grid;
     grid-template-columns: repeat(4, 1fr);
 }
+
 
 .video{
     display:flex;
@@ -48,6 +51,15 @@ main{
     align-items: center;
     box-shadow: 2px 2px 5px darkgray;
     text-align: center;
+
+}
+
+@media screen and (max-device-width: 500px) {
+   main{
+       display: flex;
+       flex-direction: column;
+   } 
+    
 }
 
 .cardvideo{
