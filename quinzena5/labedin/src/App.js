@@ -27,11 +27,11 @@ function App() {
       </div>
 
       <CardPequeno
-      imagem={email}
-      email="felipee.beernardes@gmail.com"
+      email="Email:"
+      enderecoEmail="felipee.beernardes@gmail.com"
+      endereco="Endereço: Rua Natividade da Serra"
 
-      imagem={gps}
-      endereco="Estrada do jacaranda"
+     
       />
 
       <div className="page-section-container">

@@ -7,13 +7,9 @@
     height: 200px;
 }
 
-.smallcard-container > img {
-    width: 70px;
-    margin-right: 10px;
-    border-radius: 50%;
-}
 
-.smallcard-container h4 {
+
+.smallcard-container p {
     margin-bottom: 15px;
 }
 
